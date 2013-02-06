@@ -1,0 +1,7 @@
+base   variants
+author Michael Hamann
+email  michael@content-space.de
+date   2013-02-06
+name   variants plugin
+desc   Allows to create different variants of a page that the user can select
+url    https://www.dokuwiki.org/plugin:variants
