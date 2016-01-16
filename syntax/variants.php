@@ -77,7 +77,7 @@ class syntax_plugin_variants_variants extends DokuWiki_Syntax_Plugin {
      * @param Doku_Handler $handler The handler object
      * @return bool False, this plugin doesn't need to be added by the handler
      */
-    public function handle($match, $state, $pos, &$handler){
+    public function handle($match, $state, $pos, Doku_Handler $handler){
         switch ($state) {
             case DOKU_LEXER_ENTER:
                 // setup call writer
@@ -113,7 +113,7 @@ class syntax_plugin_variants_variants extends DokuWiki_Syntax_Plugin {
      * @param array         $data      The data from the handler
      * @return bool If anything has been rendered
      */
-    public function render($mode, &$renderer, $data) {
+    public function render($mode, Doku_Renderer $renderer, $data) {
         $renderer->nocache();
         /** @var Input $INPUT */
         global $INPUT;
